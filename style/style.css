@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Palanquin", "QuickSand", 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin: 0;
+}
+.jumbotron {
+    background-color: #803D3B;
+    color: #E4C59E;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+header nav {
+    background-color: #AF8260;
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 10px;
+}
+nav a { 
+    text-decoration: none; 
+    color: #322C2B; 
+    font-weight: 500;
+}
+nav a:hover {
+    font-weight: bold;
+}
+.logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.nav-a {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 0%;
+    padding: 10px;
+}
+h2, h3 {
+    color: #803D3B;
+}
+.image-lengkap {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    align-items: center;
+    
+}
+.card {
+    box-shadow: 0px 5px 8px 0px #322C2B;
+    padding: 25px;
+    margin: 20px; 
+}
+.jenis {
+    border: 2px solid #322C2B;
+    border-radius: 5px;
+    padding: 20px;
+}
+main {
+    display: flex;
+}  
+.jenis li {
+    list-style: none;
+}
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column-nowrap;
+    gap: 1rem 2rem;
+}
+.cara-membuat li {
+    list-style: decimal;
+}
+.profile-cookies {
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 5px 8px 0px #322C2B;;
+    margin: 20px;
+    padding: 10px;
+}
+aside {
+    flex: 1;
+    top: 0;
+}
+footer {
+    background-color: #803D3B;
+    color: #E4C59E;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    main aside {
+        align-self: stretch;
+    }
+}
